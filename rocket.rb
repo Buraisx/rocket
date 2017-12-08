@@ -4,7 +4,15 @@ class Rocket
     @colour = options[:colour] || random_colour
     @flying = options[:flying] || false
   end
-
+  def prefixes
+    prefixes = ["aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"]
+  end
+  def suffixes
+      suffixes = ["i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x"]
+  end
+  def colour_list
+      colour_list = ["red", "yellow", "blue", "green", "purple", "orange"]
+  end
   def name
     @name
   end
